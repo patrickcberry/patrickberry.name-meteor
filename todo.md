@@ -1,0 +1,3 @@
+- [ ] Remove buttons from carousel
+- [ ] Slow down carousel
+- [ ] Get content off site and fill out this list
