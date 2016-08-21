@@ -9,16 +9,18 @@ Router.configure({
 Router.route('/', function () {
   	//this.layout('LayoutDefault');
 	this.render('carousel', {to: 'carousel'});
+	this.render('home', {to: 'body'});
 	this.render('defaultFooter', {to: 'footer'});
 	
-	Session.set("active-navbar-link", "none");
+	Session.set("active-navbar-link", "home");
 });
 
 // ===============================
 // RESUME
 
 Router.route('/resume', function () {
-  	this.render('resume', {to: 'body'});
+	this.layout('ResumeLayout');
+	this.render('sidebar', {to: 'sidebar'});
 	this.render('defaultFooter', {to: 'footer'});
 	
 	Session.set("active-navbar-link", "resume");
@@ -28,6 +30,7 @@ Router.route('/resume', function () {
 // INTERESTS
 
 Router.route('/interests', function () {
+	this.render('carousel', {to: 'carousel'});	
   	this.render('interests', {to: 'body'});
 	this.render('defaultFooter', {to: 'footer'});
 	
@@ -38,6 +41,7 @@ Router.route('/interests', function () {
 // CONTACT
 
 Router.route('/contact', function () {
+	this.render('carousel', {to: 'carousel'});	
   	this.render('contact', {to: 'body'});
 	this.render('defaultFooter', {to: 'footer'});
 	
@@ -48,6 +52,7 @@ Router.route('/contact', function () {
 // ABOUT
 
 Router.route('/about', function () {
+	this.render('carousel', {to: 'carousel'});	
   	this.render('about', {to: 'body'});
 	this.render('defaultFooter', {to: 'footer'});
 	

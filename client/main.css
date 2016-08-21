@@ -7,6 +7,21 @@ body {
   color: #5a5a5a;
 }
 
+/* Widen the container 
+-------------------------------------------------- */
+
+@media (min-width: 1200px) {
+  .container {
+      width: 90%;
+  }
+}
+
+/* Page content to clear the navbar
+-------------------------------------------------- */
+.page-content {
+  padding-top: 50px;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

@@ -1,0 +1,27 @@
+<template name="ResumeLayout">
+	
+	{{> navbar}}
+	
+	<div class="container page-content">
+
+		<h1>Resume Template</h1>
+
+		<div class="col-lg-4 col-md-2 col-sm-12">
+			{{> yield "sidebar"}}
+		</div>
+
+		<div class="col-lg-4 col-md-5 col-sm-12">
+			<h1>Column 1</h1>
+			{{> yield "left"}}
+		</div>
+
+		<div class="col-lg-4 col-md-5 col-sm-12">
+			<h1>Column 2</h1>
+			{{> yield "right"}}
+		</div>
+
+		{{> yield "footer"}}
+
+	</div>
+	
+</template>
