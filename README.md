@@ -3,9 +3,18 @@ Personal website http://patrickberry.name
 
 ## Tasks
 
-- [ ] All menu links working
+- [X] All menu links working
+- [X]  > Home
+- [X]  > Resume
+- [X]  > Interest
+- [X]  > Contact
+- [X]  > About
+
+- [ ] Single page content
 - [ ]  > Home
-- [ ]  > Resume
 - [ ]  > Interest
 - [ ]  > Contact
 - [ ]  > About
+
+- [ ] Resume structure setup
+- [ ] Resume side menu setup
