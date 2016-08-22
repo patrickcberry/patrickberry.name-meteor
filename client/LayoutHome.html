@@ -1,0 +1,12 @@
+<template name="LayoutHome">
+	{{> navbar}}
+	
+	<div class="home-page">
+
+	{{> yield "carousel"}}
+	{{> yield "body"}}
+	{{> yield "footer"}}
+
+	</div>
+	
+</template>

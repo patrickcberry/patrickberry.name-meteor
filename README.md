@@ -12,9 +12,22 @@ Personal website http://patrickberry.name
 
 - [ ] Single page content
 - [ ]  > Home
-- [ ]  > Interest
-- [ ]  > Contact
-- [ ]  > About
+- [ ]  > Interest (hide menu for time being)
+- [X]  > Contact
+- [X]  > About
+
+- [ ] Develop Home Page
+- [X]  > Remove footer
+- [ ]  > Add rounded corners to images
+- [ ]  > Reduce padding between images
+- [ ]  > Artices to be either random or featured (TBC)
 
 - [ ] Resume structure setup
 - [ ] Resume side menu setup
+- [ ] Resume content built out
+
+## Items that can be added later (after publication)
+
+- [ ] Interests page
+- [ ] Blog
+- [ ] Articles

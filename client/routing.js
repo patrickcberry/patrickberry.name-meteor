@@ -7,10 +7,10 @@ Router.configure({
 // DEFAULT ROUTE
 
 Router.route('/', function () {
-  	//this.layout('LayoutDefault');
+  	//this.layout('LayoutHome');
 	this.render('carousel', {to: 'carousel'});
 	this.render('home', {to: 'body'});
-	this.render('defaultFooter', {to: 'footer'});
+	//this.render('defaultFooter', {to: 'footer'});
 	
 	Session.set("active-navbar-link", "home");
 });
