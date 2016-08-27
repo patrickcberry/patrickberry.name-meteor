@@ -1,17 +1,50 @@
 <template name="sidebar">
-	<ul>
-		<li>Summary & Objectives</li>
-		<li>Capabilities</li>
-		<li>Achievements</li>
-		<li>Specialities</li>
-		<li>Key Positions</li>
-		<li>Employment History</li>
-		<li>Projects</li>
-		<li>Expereince</li>
-		<li>Skills</li>
-		<li>Qualifications & Certifications</li>
-		<li>Training</li>
-		<li>Locations</li>
-		<li>Clients</li>
-	</ul>
+
+<style>
+	.nav-pills > li > a {
+        color: #9d9d9d;	
+        background-color: #222;	
+	}
+
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+        color: #fff;
+        background-color: black;
+    }
+
+    .nav-pills > li > a:hover {
+        color: #fff;
+        background-color: black;
+    }
+
+    .nav-pills > li.disabled > a, .nav-pills > li.disabled > a:focus, .nav-pills > li.disabled > a:hover {
+        color: #9d9d9d;
+        background-color: #222;
+    }
+
+
+
+
+</style>
+
+	<div class="sidebar-wrapper">
+
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation" class="{{checkActiveMenuItem 'summary'}}"><a href="/resume">Summary & Objectives</a></li>
+			<li role="presentation" class="{{checkActiveMenuItem 'capabilities'}}"><a href="/resume/capabilities">Capabilities</a></li>
+			<li role="presentation" class="disabled"><a href="#">Achievements</a></li>
+			<li role="presentation" class="disabled"><a href="#">Specialities</a></li>
+			<li role="presentation" class="disabled"><a href="#">Key Positions</a></li>
+			<li role="presentation" class="disabled"><a href="#">Employment History</a></li>
+			<li role="presentation" class="disabled"><a href="#">Projects</a></li>
+			<li role="presentation" class="disabled"><a href="#">Expereince</a></li>
+			<li role="presentation" class="disabled"><a href="#">Skills</a></li>
+			<li role="presentation" class="disabled"><a href="#">Qualifications & Certifications</a></li>
+			<li role="presentation" class="disabled"><a href="#">Training</a></li>
+			<li role="presentation" class="disabled"><a href="#">Locations</a></li>
+			<li role="presentation" class="disabled"><a href="#">Clients</a></li>
+		</ul>
+
+	</div>
+
 </template>

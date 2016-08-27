@@ -1,5 +1,12 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
+.sidebar-wrapper {
+  padding-top: 10px;
+  //margin-left: -20px;
+}
+
+
 /* Padding below the footer and lighter body text */
 
 body {
@@ -15,6 +22,13 @@ body {
 @media (min-width: 1200px) {
   .container {
       width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-resume {
+      width: 95%;
+      height: 100%;
   }
 }
 

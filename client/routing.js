@@ -21,9 +21,29 @@ Router.route('/', function () {
 Router.route('/resume', function () {
 	this.layout('ResumeLayout');
 	this.render('sidebar', {to: 'sidebar'});
-	this.render('defaultFooter', {to: 'footer'});
+	this.render('summary', {to: 'left'});
+	this.render('objectives', {to: 'right'});
+	this.render('blank', {to: 'full'});
 	
 	Session.set("active-navbar-link", "resume");
+	Session.set("active-sidebar-link", "summary");
+});
+
+Router.route('/resume/:section', function () {
+	switch ( this.params.section) {
+		case "capabilities":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('capabilities', {to: 'full'});						
+			Session.set("active-sidebar-link", "capabilities");
+			break;
+
+		default:
+
+	}
+
 });
 
 // ===============================
