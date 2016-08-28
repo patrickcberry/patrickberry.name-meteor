@@ -40,6 +40,61 @@ Router.route('/resume/:section', function () {
 			Session.set("active-sidebar-link", "capabilities");
 			break;
 
+		case "achievements":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('achievements', {to: 'full'});						
+			Session.set("active-sidebar-link", "achievements");
+			break;		
+
+		case "specialities":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('specialities', {to: 'full'});						
+			Session.set("active-sidebar-link", "specialities");
+			break;		
+
+		case "keypositions":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('keypositions', {to: 'full'});						
+			Session.set("active-sidebar-link", "keypositions");
+			break;		
+
+		case "history":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('history', {to: 'full'});						
+			Session.set("active-sidebar-link", "history");
+			break;		
+
+
+		case "qualifications":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('qualifications', {to: 'full'});						
+			Session.set("active-sidebar-link", "qualifications");
+			break;		
+
+		case "training":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('training', {to: 'full'});						
+			Session.set("active-sidebar-link", "training");
+			break;		
+
 		default:
 
 	}
