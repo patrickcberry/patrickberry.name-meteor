@@ -76,6 +76,14 @@ Router.route('/resume/:section', function () {
 			Session.set("active-sidebar-link", "history");
 			break;		
 
+		case "experience":
+			this.layout('ResumeLayout');
+			this.render('sidebar', {to: 'sidebar'});
+			this.render('blank', {to: 'left'});			
+			this.render('blank', {to: 'right'});			
+			this.render('experience', {to: 'full'});						
+			Session.set("active-sidebar-link", "experience");
+			break;		
 
 		case "qualifications":
 			this.layout('ResumeLayout');

@@ -40,12 +40,15 @@ Personal website http://patrickberry.name
 - [ ] Employment History (timeline)
 - [X]   > Open page with all sections closed
 - [ ]   > Images (if appropiate)
-- [ ]   > Company name to each section
+- [X]   > Company name to each section
 - [ ]   > Location to each section
 - [ ]   > Change colour of line and dots
+- [ ]   > Links to employer details
+- [ ]   > Align logos
+- [ ]   > Size logos
 - [ ] Employers (employer details)
 - [ ] Projects (db)
-- [ ] Experience (pb)
+- [ ] Experience (db)
 - [ ] Skills (db)
 - [X] Qualifications and Certifications 
 - [X] Training
@@ -74,6 +77,11 @@ Personal website http://patrickberry.name
 - [ ] Update CV to include a summary page link example on LinkedIn
 - [ ] Add link to download CV (as a pdf)
 - [ ] Tidy up image sizes on employment history page
+- [ ] Google analytics
+- [ ] Google serch optimisation
+- [ ] Add link on linked in
+- [ ] Make spiderable
+- [ ] Add link on linkedIn
 
 ## Items that can be added later (after publication)
 
@@ -81,3 +89,4 @@ Personal website http://patrickberry.name
 - [ ] Blog
 - [ ] Articles
 - [ ] Filters on tables
+- [ ] Wordcloud
